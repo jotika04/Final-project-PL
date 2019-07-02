@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Showcontroller">
+    <children>
+        <Label alignment="CENTER" layoutX="231.0" layoutY="13.0" prefHeight="45.0" prefWidth="141.0" text="STOCK DATA">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tableView" layoutX="72.0" layoutY="108.0" prefHeight="214.0" prefWidth="459.0">
+            <columns>
+                <TableColumn fx:id="stockidcol" prefWidth="47.0" text="ID" />
+                <TableColumn fx:id="stocknamecol" prefWidth="291.0" text="NAME" />
+                <TableColumn fx:id="stockqtycol" minWidth="0.0" prefWidth="120.0" text="QUANTITY" />
+            </columns>
+        </TableView>
+        <Button layoutX="455.0" layoutY="341.0" mnemonicParsing="false" onAction="#Goback" text="Go Back To Main Menu">
+            <font>
+                <Font size="13.0" />
+            </font></Button>
+        <Button layoutX="72.0" layoutY="329.0" mnemonicParsing="false" onAction="#Show" prefHeight="45.0" prefWidth="120.0" text="Show All" />
+    </children>
+</AnchorPane>
